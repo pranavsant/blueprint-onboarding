@@ -6,9 +6,9 @@ import { LuCircle as ProfileIcon } from "react-icons/lu";
 import { TbMessageCircle } from "react-icons/tb";
 import { BlueprintLogo } from "@/assets/logos/BlueprintLogo";
 import "@/styles/global.css";
+import Image from "next/image";
+import sfImage from "../assets/San-Francisco.webp";
 import styles from "./styles.module.css";
-import Image from 'next/image';
-import sfImage from '../assets/San-Francisco.webp';
 
 export default function Home() {
   return (
@@ -28,7 +28,13 @@ export default function Home() {
           <p className={styles.posterName}>etam3 at Mission Bit</p>
           <p className={styles.postLocation}>San Francisco, CA</p>
 
-          <Image src={sfImage} alt="San Francisco" className={styles.postImage} width={346} height={231}/>
+          <Image
+            src={sfImage}
+            alt="San Francisco"
+            className={styles.postImage}
+            width={346}
+            height={231}
+          />
 
           <p className={styles.captionText}>
             This past weekend, I taught at Mission Bit. I was working with a
@@ -51,7 +57,9 @@ export default function Home() {
           <ProfileIcon className={styles.profileIcon} size={24} />
           <p className={styles.posterName}>carolyn123 at Boys and Girls Club</p>
           <p className={styles.postLocation}>Oakland, CA</p>
-          <p className={styles.captionText}>I recently volunteered at my local Boys and Girls Club!</p>
+          <p className={styles.captionText}>
+            I recently volunteered at my local Boys and Girls Club!
+          </p>
         </div>
       </div>
     </main>
