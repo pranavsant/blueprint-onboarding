@@ -55,3 +55,113 @@
 .contentScroll {
   margin-top: 3.125rem;
 }
+
+.profileIcon {
+  width: 40px;
+  height: 40px;
+  fill: #D9D9D9;
+}
+
+.posterName {
+  display: flex;
+  width: 233px;
+  height: 32px;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #262626;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 138.462% */
+  letter-spacing: -0.07px;
+}
+
+.postLocation {
+  display: flex;
+  width: 99px;
+  height: 8px;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #979797;
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.05px;
+}
+
+.postImage {
+  width: 346px;
+  height: 231px;
+
+  border-radius: 10px;
+}
+
+.captionText {
+  display: flex;
+  width: 345px;
+  height: 145px;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #262626;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 138.462% */
+}
+
+.likes {
+  color: #000;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 180% */
+}
+
+.viewComments {
+  color: #000;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 180% */
+}
+
+.heartIcon {
+  width: 24px;
+  height: 21px;
+}
+
+.tbMessageCircle {
+  height: 23.344px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.shareIcon {
+  width: 23px;
+  height: 20px;
+}
+
+.postDate {
+  display: flex;
+  width: 76px;
+  height: 8px;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #979797;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.05px;
+}
