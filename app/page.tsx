@@ -24,9 +24,15 @@ export default function Home() {
         </div>
 
         <div className={styles.contentScroll}>
-          <ProfileIcon className={styles.profileIcon} size={24} />
-          <p className={styles.posterName}>etam3 at Mission Bit</p>
-          <p className={styles.postLocation}>San Francisco, CA</p>
+          <div className={styles.postHeader}>
+            <ProfileIcon className={styles.profileIcon} size={24} />
+            <div className={styles.posterNameAndLocation}>
+              <p className={styles.posterName}>
+                <strong>etam3</strong> at <strong>Mission Bit</strong>
+              </p>
+              <p className={styles.postLocation}>San Francisco, CA</p>
+            </div>
+          </div>
 
           <Image
             src={sfImage}
@@ -46,17 +52,35 @@ export default function Home() {
             here: https://missionbit.org/get-involved/volunteer-with-us/
           </p>
 
-          <p className={styles.likes}>3 Likes</p>
-          <p className={styles.viewComments}>View 2 Comments</p>
-          <HeartIcon className={styles.heartIcon} size={24} />
-          <TbMessageCircle className={styles.tbMessageCircle} size={24} />
-          <ShareIcon className={styles.shareIcon} size={24} />
+          <div className={styles.engagementRow}>
+            <span className={styles.likes}>3 likes</span>
+            <span className={styles.viewComments}>View 2 comments</span>
+          </div>
+
+          <div className={styles.actionBar}>
+            <div className={styles.actionLeft}>
+              <HeartIcon className={styles.actionIcon} />
+              <TbMessageCircle className={styles.actionIcon} />
+            </div>
+            <ShareIcon className={styles.actionIcon} />
+          </div>
 
           <p className={styles.postDate}>February 1</p>
 
-          <ProfileIcon className={styles.profileIcon} size={24} />
-          <p className={styles.posterName}>carolyn123 at Boys and Girls Club</p>
-          <p className={styles.postLocation}>Oakland, CA</p>
+          <hr />
+          <br />
+
+          <div className={styles.postHeader}>
+            <ProfileIcon className={styles.profileIcon} size={24} />
+            <div className={styles.posterNameAndLocation}>
+              <p className={styles.posterName}>
+                <strong>carolyn123</strong> at{" "}
+                <strong>Boys and Girls Club</strong>
+              </p>
+              <p className={styles.postLocation}>Oakland, CA</p>
+            </div>
+          </div>
+
           <p className={styles.captionText}>
             I recently volunteered at my local Boys and Girls Club!
           </p>
