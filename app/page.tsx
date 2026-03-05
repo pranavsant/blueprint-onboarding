@@ -7,7 +7,7 @@ import { TbMessageCircle } from "react-icons/tb";
 import { BlueprintLogo } from "@/assets/logos/BlueprintLogo";
 import "@/styles/global.css";
 import Image from "next/image";
-import sfImage from "../assets/San-Francisco.webp";
+import SfImage from "../assets/San-Francisco.webp";
 import styles from "./styles.module.css";
 
 export default function Home() {
@@ -25,17 +25,19 @@ export default function Home() {
 
         <div className={styles.contentScroll}>
           <div className={styles.postHeader}>
-            <ProfileIcon className={styles.profileIcon} size={24} />
+            <ProfileIcon className={styles.profileIcon} />
             <div className={styles.posterNameAndLocation}>
               <p className={styles.posterName}>
-                <strong>etam3</strong> at <strong>Mission Bit</strong>
+                <span className={styles.posterNameBold}>etam3</span>
+                <span className={styles.posterNameNormal}> at </span>
+                <span className={styles.posterNameBold}>Mission Bit</span>
               </p>
               <p className={styles.postLocation}>San Francisco, CA</p>
             </div>
           </div>
 
           <Image
-            src={sfImage}
+            src={SfImage}
             alt="San Francisco"
             className={styles.postImage}
             width={346}
@@ -71,11 +73,14 @@ export default function Home() {
           <br />
 
           <div className={styles.postHeader}>
-            <ProfileIcon className={styles.profileIcon} size={24} />
+            <ProfileIcon className={styles.profileIcon} />
             <div className={styles.posterNameAndLocation}>
               <p className={styles.posterName}>
-                <strong>carolyn123</strong> at{" "}
-                <strong>Boys and Girls Club</strong>
+                <span className={styles.posterNameBold}>carolyn123</span>
+                <span className={styles.posterNameNormal}> at </span>
+                <span className={styles.posterNameBold}>
+                  Boys and Girls Club
+                </span>
               </p>
               <p className={styles.postLocation}>Oakland, CA</p>
             </div>
