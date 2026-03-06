@@ -6,6 +6,8 @@ import { LuCircle as ProfileIcon } from "react-icons/lu";
 import { TbMessageCircle } from "react-icons/tb";
 import { BlueprintLogo } from "@/assets/logos/BlueprintLogo";
 import "@/styles/global.css";
+import Image from "next/image";
+import SfImage from "../assets/San-Francisco.webp";
 import styles from "./styles.module.css";
 
 export default function Home() {
@@ -22,16 +24,27 @@ export default function Home() {
         </div>
 
         <div className={styles.contentScroll}>
-          <ProfileIcon size={24} />
-          <p>etam3 at Mission Bit</p>
-          <p>San Francisco, CA</p>
+          <div className={styles.postHeader}>
+            <ProfileIcon className={styles.profileIcon} />
+            <div className={styles.posterNameAndLocation}>
+              <p className={styles.posterName}>
+                <span className={styles.posterNameBold}>etam3</span>
+                <span className={styles.posterNameNormal}> at </span>
+                <span className={styles.posterNameBold}>Mission Bit</span>
+              </p>
+              <p className={styles.postLocation}>San Francisco, CA</p>
+            </div>
+          </div>
 
-          <p>
-            Image Link:
-            https://cdn.britannica.com/51/178051-050-3B786A55/San-Francisco.jpg
-          </p>
+          <Image
+            src={SfImage}
+            alt="San Francisco"
+            className={styles.postImage}
+            width={346}
+            height={231}
+          />
 
-          <p>
+          <p className={styles.captionText}>
             This past weekend, I taught at Mission Bit. I was working with a
             group of high school students who were building their first web
             pages. I really enjoyed being able to help guide 10 students on
@@ -41,18 +54,41 @@ export default function Home() {
             here: https://missionbit.org/get-involved/volunteer-with-us/
           </p>
 
-          <p>3 Likes</p>
-          <p>View 2 Comments</p>
-          <HeartIcon size={24} />
-          <TbMessageCircle size={24} />
-          <ShareIcon size={24} />
+          <div className={styles.engagementRow}>
+            <span className={styles.likes}>3 likes</span>
+            <span className={styles.viewComments}>View 2 comments</span>
+          </div>
 
-          <p>February 1</p>
+          <div className={styles.actionBar}>
+            <div className={styles.actionLeft}>
+              <HeartIcon className={styles.actionIcon} />
+              <TbMessageCircle className={styles.actionIcon} />
+            </div>
+            <ShareIcon className={styles.actionIcon} />
+          </div>
 
-          <ProfileIcon size={24} />
-          <p>carolyn123 at Boys and Girls Club</p>
-          <p>Oakland, CA</p>
-          <p>I recently volunteered at my local Boys and Girls Club!</p>
+          <p className={styles.postDate}>February 1</p>
+
+          <hr />
+          <br />
+
+          <div className={styles.postHeader}>
+            <ProfileIcon className={styles.profileIcon} />
+            <div className={styles.posterNameAndLocation}>
+              <p className={styles.posterName}>
+                <span className={styles.posterNameBold}>carolyn123</span>
+                <span className={styles.posterNameNormal}> at </span>
+                <span className={styles.posterNameBold}>
+                  Boys and Girls Club
+                </span>
+              </p>
+              <p className={styles.postLocation}>Oakland, CA</p>
+            </div>
+          </div>
+
+          <p className={styles.captionText}>
+            I recently volunteered at my local Boys and Girls Club!
+          </p>
         </div>
       </div>
     </main>
