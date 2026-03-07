@@ -1,0 +1,135 @@
+.postHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0 0.75rem 0.5rem;
+}
+
+.profileIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #d9d9d9;
+  size: 1.5rem;
+}
+
+.posterNameAndLocation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.actionBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* left icons vs right icon */
+  padding: 0.25rem 0.75rem;
+}
+
+.actionLeft {
+  display: flex;
+  flex-direction: row;
+  gap: 0.875rem;
+  /* space between heart and comment */
+}
+
+.posterName {
+  color: #262626;
+  font-family: Poppins, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  letter-spacing: -0.004375rem;
+  margin: 0;
+}
+
+.posterName strong {
+  font-weight: 700;
+}
+
+.posterNameNormal {
+  color: #262626;
+  font-family: Poppins, sans-serif;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+  letter-spacing: -0.00438rem;
+  margin: 0;
+}
+
+.posterNameBold {
+  font-weight: 700;
+}
+
+.postLocation {
+  color: #979797;
+  font-family: Poppins, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.003125rem;
+  margin: 0;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 0 0;
+  overflow: hidden;
+}
+
+.postImage {
+  width: 94%;
+  height: auto;
+  display: block;
+  border-radius: 0.625rem;
+  margin: 0 auto 0.625rem auto;
+}
+
+.captionText {
+  color: #262626;
+  font-family: Poppins, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  padding: 0.5rem 0.75rem;
+  margin: 0;
+}
+
+.engagementRow {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  padding: 0 0.75rem;
+}
+
+.likes {
+  color: #000;
+  font-family: Poppins;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+  /* 180% */
+}
+
+.viewComments {
+  color: #000;
+  font-family: Poppins;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+  /* 180% */
+}
+
+.postDate {
+  color: #979797;
+  font-family: Poppins, sans-serif;
+  font-size: 0.625rem;
+  padding: 0 0.75rem 0.75rem;
+  margin: 0;
+}
